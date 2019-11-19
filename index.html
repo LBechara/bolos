@@ -14,22 +14,22 @@
     <h1 class="topelement">A diferente maneira de pedir doces, bolos e comida.</h1>
     <div class="list">
         <div class="options">
-            <a href="" class="optionstitle">Home</a>
+            <a class="optionstitle">Home</a>
         </div>
         <div class="options">
-            <a href="" class="optionstitle">Bolos</a>
+            <a class="optionstitle">Bolos</a>
         </div>
         <div class="options">
-            <a href="" class="optionstitle">Topos de bolo</a>
+            <a class="optionstitle">Topos de bolo</a>
         </div>
         <div class="options">
-            <a href="" class="optionstitle">Doces</a>
+            <a class="optionstitle">Doces</a>
         </div>
         <div class="options">
-            <a href="" class="optionstitle">Comidas</a>
+            <a class="optionstitle">Comidas</a>
         </div>
         <div class="options">
-            <a href="" class="optionstitle">Contato</a>
+            <a class="optionstitle">Contato</a>
         </div>
     </div>
     <hr class="line">
@@ -55,7 +55,15 @@
         </tbody>
     </table> -->
     <script>
-        
+        var options = document.querySelectorAll(".optionstitle");
+
+        for(var i = 0 ; i < options.length ; i++){
+        options[i].addEventListener("click", alertaEmConstrucao);
+        }
+
+        function alertaEmConstrucao(){
+            alert("em construção!");
+        }
     </script>
 </body>
 </html>
