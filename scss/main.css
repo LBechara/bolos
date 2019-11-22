@@ -53,3 +53,54 @@ body {
     border: none;
     margin: auto;
 }
+main{
+    width: 66%;
+    margin: auto;
+}
+.form{
+    width: 640px;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(68, 40, 26);
+    font-size: 24px;
+}
+.formlabel{
+    display: block;
+    margin: 10px 0 10px;
+}
+.forminput{
+    display: block;
+    padding: 5px 40px 5px 40px;
+    width: 66%;
+    margin: 0 0 10px;
+}
+.checkboxlabel{
+    display: inline-block;
+    margin: 10px 0 10px;
+}
+.checkboxinput{
+    display: inline-block;
+    padding: 5px 40px 5px 40px;
+    margin: 0 0 10px;
+}
+.formsubmit{
+    display: block;
+    margin: 10px 0 10px;
+}
+.msglabel{
+    display: block;
+    margin: 10px 0 10px;
+}
+.msginput{
+    display: block;
+    margin: 0 0 10px;
+}
+.radiolabel{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 10px;
+}
+.radioinput{
+    display: block;
+    margin: 0 0 10px;
+}

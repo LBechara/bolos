@@ -11,28 +11,66 @@
     <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
-    <h1 class="topelement">A diferente maneira de pedir doces, bolos e comida.</h1>
-    <div class="list">
-        <div class="options">
-            <a class="optionstitle">Home</a>
+    <header>
+        <h1 class="topelement">A diferente maneira de pedir doces, bolos e comida.</h1>
+        <div class="list">
+            <div class="options">
+                <a class="optionstitle">Home</a>
+            </div>
+            <div class="options">
+                <a class="optionstitle">Bolos</a>
+            </div>
+            <div class="options">
+                <a class="optionstitle">Topos de bolo</a>
+            </div>
+            <div class="options">
+                <a class="optionstitle">Doces</a>
+            </div>
+            <div class="options">
+                <a class="optionstitle">Comidas</a>
+            </div>
+            <div class="options">
+                <a class="optionstitle">Contato</a>
+            </div>
         </div>
-        <div class="options">
-            <a class="optionstitle">Bolos</a>
-        </div>
-        <div class="options">
-            <a class="optionstitle">Topos de bolo</a>
-        </div>
-        <div class="options">
-            <a class="optionstitle">Doces</a>
-        </div>
-        <div class="options">
-            <a class="optionstitle">Comidas</a>
-        </div>
-        <div class="options">
-            <a class="optionstitle">Contato</a>
-        </div>
-    </div>
-    <hr class="line">
+        <hr class="line">
+    </header>
+    <main>
+        <form class="form">
+            <div>
+                <p>Escolha o sabor do bolo:</p>
+                <label class="radiolabel" for="sabor-brigadeiro">Brigadeiro</label>
+                <input class="radioinput" name="sabordobolo" type="radio" id="sabor-brigadeiro">
+
+                <label class="radiolabel" for="sabor-morango">Morango</label>
+                <input class="radioinput" name="sabordobolo" type="radio" id="sabor-morango">
+
+                <label class="radiolabel" for="sabor-frutasvermelhas">Frutas vermelhas</label>
+                <input class="radioinput" name="sabordobolo" type="radio" id="sabor-frutasvermelhas">
+            </div>
+
+            <label class="formlabel" for="pesodobolo">Quantidade(Kg):</label>
+            <input class="forminput" type="number" id="pesodobolo">
+
+            <label class="msglabel" for="obsdobolo">Observações:</label>
+            <textarea class="msginput" cols="70" rows="14" id="obsdobolo"></textarea>
+
+            <input class="checkboxinput" type="checkbox" id="topodobolo">
+            <label class="checkboxlabel" for="tobodobolo">Adicionar topo de bolo(+R$100,00)</label>
+
+            <input class="checkboxinput" type="checkbox" id="duascamadasdobolo">
+            <label class="checkboxlabel" for="duascamadasdobolo">Duas camadas de recheio(+R$10,00)</label>
+
+            <input class="checkboxinput" type="checkbox" id="retirarnolocaldobolo">
+            <label class="checkboxlabel" for="retirarnolocaldobolo">Entrega inclusa(+R$10,00)</label>
+
+            <input class="checkboxinput" type="checkbox" id="x">
+            <label class="checkboxlabel" for="x">x</label>
+
+            <input class="formsubmit" type="submit" value="Confirmar pedido">
+            
+        </form>
+    </main>
     <!-- <table class="tableprices">
         <thead class="tablepricestitle">
             <tr>
